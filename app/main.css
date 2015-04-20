@@ -1,0 +1,58 @@
+/* your css code goes here */
+body {
+    padding-top:50px;
+}
+
+.nav {
+    background:black;
+    padding:10px;
+    position:fixed;
+    box-shadow: 0 0 10px #999;
+    top:0;
+    left:0;
+    right:0;
+    color:white;
+    z-index: 5000;
+}
+
+.nav select {
+    font-size:20px;
+    width: 200px;
+    border: 2px solid #ddd;
+}
+
+.nav select option {
+    text-transform: capitalize;
+}
+
+.calendar-container > div {
+    border:1px solid #ddd;
+    max-width:14%;
+    min-width:14%;
+    font-size:32px;
+    position:relative;
+}
+
+.calendar-container > div,
+.calendar-container > div > div,
+.calendar-container .calendar-day {
+    box-sizing:border-box;
+    height:200px;
+}
+
+.calendar-day {
+    padding:10px;
+}
+.calendar-day.otherMonth {
+    background:#eee;
+}
+
+.calendar-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+}
